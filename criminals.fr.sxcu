@@ -1,0 +1,10 @@
+{
+  "Version": "13.0.1",
+  "Name": "criminals.fr",
+  "DestinationType": "ImageUploader, TextUploader, FileUploader",
+  "RequestType": "POST",
+  "RequestURL": "https://criminals.fr/upload.php",
+  "Body": "MultipartFormData",
+  "FileFormName": "sharex",
+  "URL": "https://criminals.fr/$json:url$"
+}

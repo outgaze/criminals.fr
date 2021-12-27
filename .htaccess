@@ -1,0 +1,33 @@
+Options -MultiViews
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.png -f
+RewriteRule (.+) $1.png [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.gif -f
+RewriteRule (.+) $1.gif [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.txt -f
+RewriteRule (.+) $1.txt [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.jpg -f
+RewriteRule (.+) $1.jpg [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.jpeg -f
+RewriteRule (.+) $1.jpeg [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.mp4 -f
+RewriteRule (.+) $1.mp4 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.webm -f
+RewriteRule (.+) $1.webm [L]
+
+

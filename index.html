@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="assets/pics/crown.png" rel="icon" type="image/ico">
+    <title> Mathias#0006 </title>
+    <meta property="og:image" content="https://criminals.fr/assets/pics/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Mathias">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/preloader.css" rel="stylesheet">
+</head>
+<body onselectstart="return false;" unselectable="on" oncontextmenu="return false;">
+<canvas></canvas>
+<div class="video-background">
+    <div class="video-foreground">
+        <iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none" type="audio/mpeg"></iframe>
+        <video id="player" width="100%" height="100%" loop muted>
+            <source src="flex.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="assets/js/tickeling.js" type="text/javascript"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="assets/css/animations.css" rel="stylesheet">
+<link href="assets/css/vibrate.css" rel="stylesheet">
+<link href="assets/css/buttons.css" rel="stylesheet">
+<div class="center">
+    <center>
+        <div class="tossing">
+            <div class="vibrate-3" style="letter-spacing: 4px; font-size: 24px;">Mathias</div>
+        </div>
+        <br>
+        <center>
+            <div id="clockDisplay" class="clockStyle"></div>
+        </center>
+        <script src="assets/js/time.js" type="text/javascript"></script>
+        <br>
+        <center>
+            <div>
+                <a target="_blank" href="https://discord.com/users/662792876966805527" class="myButton">Contact</a> <a
+                    target="_blank" href="https://criminals.fr/criminals.fr.sxcu" class="myButton">ShareX</a>
+                <br>
+                <br>
+                <div id="pp" style="cursor: pointer; letter-spacing: 3px; font-size: 8px;" onclick="pp();">Video</div>
+                <br>
+                <div id="mu" style="cursor: pointer; letter-spacing: 3px; font-size: 8px;" onclick="mu();">Audio</div>
+            </div>
+        </center>
+    </center>
+</div>
+<script>
+    const video = document.querySelector("#player");
+    let videoPlaying = true;
+
+    function pp() {
+        if (videoPlaying) {
+            video.pause();
+            videoPlaying = false;
+        } else {
+            video.play();
+            videoPlaying = true;
+        }
+    }
+
+    function mu() {
+        video.muted = !video.muted;
+    } 
+$(function(){
+   video.play();
+});
+var vid = document.getElementById("player");
+vid.volume = 0.6;
+</script>
+<script src="assets/js/pointer.js" type="text/javascript"></script>
+<script src="assets/js/preloader.js" type="text/javascript"></script>
+</body>
+</html>
